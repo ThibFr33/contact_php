@@ -13,10 +13,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     echo "Bonjour " . $_SESSION["name"] , $_SESSION["firstname"] . ". Vous avez " . $_SESSION["age"] . "ans et votre adresse e-mail est : " . $_SESSION["email"];
 
     $errors = [];
-    if (empty($name) || ($firstname) || ($age) || ($email)) {
+    if (empty($_SESSION["name"]) || ($_SESSION["firstname"]) || ($_SESSION["age"]) || ($_SESSION["email"])) {
         $errors[] = "ERREUR !!! Vous n'avez pas renseigné tous les champs requis pour la validation";
     }
-
+    var_dump($errors);
 }
 
 ?>
