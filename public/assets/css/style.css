@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.formulaire {
+    display: flex;
+    justify-content: center;
+    width: auto;
+
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    border: solid 1px grey;
+    border-radius: 15px;
+    text-align: start;
+    gap: 1em;
+    box-shadow: 3px 3px 2px lightgrey;
+    width: 25%;
+    margin: 3em;
+    padding: 1em;
+
+}
+.submit {
+    background-color: ghostwhite;
+    color: black;
+    border: solid 2px grey ;
+    border-radius: 5px;
+    padding: 1em;
+}
+.submit:hover {
+    background-color: black;
+    color:ghostwhite;
+}
+input {
+    border-radius: 5px;
+    padding: 0.5em;
+    border: dashed 1px grey;
+    max-width: 50%;
+}
